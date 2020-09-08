@@ -3,9 +3,9 @@ variable "rw_s3_access" {
   type        = bool
 }
 
-variable "vpc_id" {
+variable "vpc_id_list" {
   description = "List of VPC ids for which Kentik should gather logs"
-  type        = string
+  type        = list(string)
 }
 
 variable "region" {

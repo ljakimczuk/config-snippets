@@ -18,3 +18,9 @@ variable "s3_bucket_prefix" {
   type        = string
   default     = "kentik"
 }
+
+variable "iam_role_prefix" {
+  description = "Prefix to use with IAM roles"
+  type        = string
+  default     = "Kentik"
+}

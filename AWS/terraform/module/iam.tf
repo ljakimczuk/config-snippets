@@ -109,7 +109,3 @@ resource "aws_iam_policy_attachment" "kentik_ec2_access" {
   roles      = [ aws_iam_role.kentik_role.name ]
   policy_arn = aws_iam_policy.kentik_ec2_access.arn
 }
-
-data "aws_s3_bucket" "manual" {
-  bucket = "boscard-k8s-kentik-logs"
-}
